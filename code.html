@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testcode</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0; 
+        }
+        .container{
+            max-width:1200px;
+            margin:auto;
+            text-align: center;
+            max-height:400px;
+        }
+        
+        .bottom{
+            height:300px;
+        }
+        .btn{
+            width:100px;
+            border-radius:10px;
+            position:relative;
+         z-index:2;
+        }
+        .btn__activity{
+            background-color:rgb(43, 128, 0);
+            
+        }
+        .btn__open{
+            background-color:yellow;
+        }
+        .btn__stop{
+            background-color:red;
+        }
+        .btn:hover{
+            opacity:0.75;
+        }
+        .bottom{
+            display:flex;
+        }
+        .bottom__square{    
+            height:75px;
+            width:75px;
+            border:1px solid white;
+            z-index:1;
+        }
+        .bottom__square-one{
+            display:'none';
+        }
+        .fontsize{
+            height:75px;
+            width:75px;
+        }
+        .avatar__cat{
+            height:100px;
+            width:100px;
+            border-radius:50%;
+        }
+        #name{
+            font-size:20px;
+            font-weight:600;
+        }
+        .plate{
+            margin-left:100px;
+            position:absolute;
+            width:300px;
+            height:300px;
+
+        }
+        .bottomplate{
+            display:flex;   
+            margin-right:100px;
+        }
+        .information{
+            display:flex;
+        }
+        .image{
+            float:right;
+        }
+        .image__1-bau{
+            display:inline-block;
+        }
+    
+       .dat{
+        display:none;
+       }
+        button{
+            position:absolute;
+            border-radius: 10px;
+            /* display:none; */
+        }
+        .image__1,.image__2{
+            display:flex;
+        }
+        .number{
+            position:absolute;
+            margin-left: 44px;
+            margin-top: 48px;
+            background-color:rgba(0,0,0,0);
+            border:1px solid rgba(0,0,0,0);
+        }
+        .money{
+            margin-top:4px;
+            margin-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bottom">
+          <div class="bottomplate">
+            <!-- <img class="plate" src="https://cf.shopee.vn/file/84a823c3f3522a0f1c52d6e8a9d4d54a"> -->
+            <div class="bottom__square bottom__square-one"></div>
+            <div class="bottom__square bottom__square-two"></div>
+            <div class="bottom__square bottom__square-three"></div>
+          </div>
+          <div class="image">
+           <div class="image__1">
+            <div class="image__1-bau">
+             <!-- <button class="dat">Đặt</button> -->
+             <button class="number bau"></button>
+                <img class="fontsize fontsize__bau" src="bau.png">
+             </div>
+            <div>
+
+            <!-- <button class="dat_1">Đặt</button> -->
+            <button class="number numberca ca"></button>
+            <img class="fontsize fontsizeimage fontsize__ca" src="ca.png">
+        </div>
+        <div>
+            <!-- <button class="dat_2">Đặt</button> -->
+            <button class="number numbertom tom"></button>
+            <img class="fontsize fontsizeimage fontsize__tom" src="tom.png">
+        </div>
+           </div>
+           <div class="image__2">
+            <div>
+                <!-- <button class="dat_3">Đặt</button> -->
+                <button class="number numberhuou huou"></button>
+            <img class="fontsize fontsizeimage fontsize__huou" src="huou.png"></div>
+            <div>
+                <!-- <button class="dat_4">Đặt</button> -->
+                <button class="number numberga ga"></button>
+            <img class="fontsize fontsizeimage fontsize__ga" src="ga.png">
+        </div>
+            <div>
+                <!-- <button class="dat_5">Đặt</button> -->
+                <button class="number numbercua cua"></button>
+
+            <img class="fontsize fontsizeimage fontsize__cua" src="cua.png">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+        <button class="btn btn__activity">Lắc</button>
+        <button class="btn btn__open">Mở</button>
+        <button class="btn btn__stop">Dừng</button> 
+        </div>
+    </div>
+    <div class="information">
+        <div class="avatar">
+            <img class="avatar__cat" src="anhmeo.jpg">
+        </div>
+        <div id="name"></div>
+            <div class="money">
+                <strong >$</strong>
+                <strong class="moneycurrent"></strong>
+            </div>
+    </div>
+    <script src="upcode.js"></script>
+</body>
+</html>
